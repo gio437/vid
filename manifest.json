@@ -1,0 +1,7 @@
+{
+    "name": "video quality checker",
+    "version": "1.0.0",
+    "description": "This is an extension to check if video quality is the same as screen resolution",
+    "manifest_version": 3,
+    "author": "Giovanni Shathaia"
+}
