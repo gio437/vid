@@ -1,15 +1,38 @@
-const checkIfPlaying = () => {
-    let vid = $('video').get(0);
+// const checkIfPlaying = () => {
+//     let vid = $('video').get(0);
 
-    vid.addEventListener('loadstart', function(e) {
-        console.log('vid started!');
-        getQuality();
-    });
+//     vid.addEventListener('playing', function(e) {
+//         console.log('vid started!');
+//         getQuality();
+//     });
+// }
+// checkIfPlaying();
+
+// chrome.runtime.sendMessage({ time: '1'});
+
+// chrome.runtime.onMessage.addListener(
+//     function (request, sender, sendResponse) {
+//         if (request.time) {
+//             getQuality();
+//         }
+//     }
+// )
+
+const createNotification = () => {
+    chrome.notifications.create(
+        {
+            title: 'qualityChecker',
+            message: 'video quality too low!',
+            // iconUrl: 'assets/32.png',
+            type: 'basic',
+            silent: false
+        }
+    )
 }
-checkIfPlaying();
 
 const getQuality = () => {
-    let quality = getVideoPlaybackQuality();
+    let videoElem = document.querySelector('video');
+    let quality = videoElem.getVideoPlaybackQuality();
     let screenHeight = window.screen.availHeight;
     let screenWidth = window.screen.availWidth;
 
@@ -17,14 +40,4 @@ const getQuality = () => {
        createNotification();
     }
 }
-
-const createNotification = () => {
-    chrome.notifications.create(
-        {
-            title: 'qualityChecker',
-            message: 'video quality too low!',
-            iconUrl: 'assets/32.png',
-            type: 'basic'
-        }
-    )
-}
+getQuality();
