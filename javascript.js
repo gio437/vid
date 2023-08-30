@@ -18,26 +18,42 @@
 //     }
 // )
 
-const createNotification = () => {
-    chrome.notifications.create(
-        {
-            title: 'qualityChecker',
-            message: 'video quality too low!',
-            // iconUrl: 'assets/32.png',
-            type: 'basic',
-            silent: false
+// chrome.runtime.onInstalled.addListener(() => {
+//     console.log('hello');
+// });
+
+chrome.runtime.onMessage.addListener(
+    function(request, sender, sendResponse) {
+        console.log('worked');
+        if (request.greeting === "hello") {
+            sendResponse({farewell: "goodbye"});
+            // chrome.notifications.create(
+            //     {
+            //         title: 'qualityChecker',
+            //         message: 'video quality too low!',
+            //         // iconUrl: 'assets/32.png',
+            //         type: 'basic',
+            //         silent: false
+            //     }
+            // );
         }
-    )
-}
+    }
+);
 
 const getQuality = () => {
-    let videoElem = document.querySelector('video');
-    let quality = videoElem.getVideoPlaybackQuality();
-    let screenHeight = window.screen.availHeight;
-    let screenWidth = window.screen.availWidth;
+    // let videoElem = document.querySelector('video');
+    // let quality = videoElem.getVideoPlaybackQuality();
+    // let screenHeight = window.screen.availHeight;
+    // let screenWidth = window.screen.availWidth;
 
-    if (quality !== screenHeight || quality !== screenWidth) {
-       createNotification();
-    }
+    // if (quality !== screenHeight || quality !== screenWidth) {
+    //    createNotification();
+    // }
 }
-getQuality();
+
+// const createMessage = () => {
+//     const response = chrome.runtime.sendMessage({greeting: "hello"});
+//     getQuality();
+//     console.log(response);
+// }
+// createMessage();
