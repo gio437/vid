@@ -4,10 +4,6 @@
     "description": "Check if video quality is the same as screen resolution",
     "manifest_version": 3,
     "author": "Giovanni S",
-    "action": {
-        "default_popup": "index.html",
-        "default_title": "vid quality matcher"
-    },
     "background": {
       "service_worker": "javascript.js"
     },
