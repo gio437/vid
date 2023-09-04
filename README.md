@@ -13,7 +13,7 @@
 1. Clone this repository or download the ZIP file.
 
     ```shell
-    git clone https://github.com/yourusername/video-quality-checker-extension.git
+    git clone git@github.com:gio437/vid.git
     ```
 
 2. Open Google Chrome.
