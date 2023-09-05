@@ -4,9 +4,9 @@
 
 ## Features
 
-- Automatically checks the current video quality setting.
-- Alerts you if the video quality is not set to screen resolution.
-- Provides a seamless way to optimize video quality for your screen.
+- On-Demand Quality Checks: QualityCheck Notifier sends notifications when you click on a YouTube video, prompting you to verify and adjust video quality settings if necessary to match your screen resolution.
+
+- User-Centric Design: The extension prioritizes a seamless user experience, ensuring you always enjoy YouTube videos at their best quality, tailored to your screen.
 
 ## Installation
 
@@ -30,7 +30,7 @@
 
 2. Click on the Video Quality Checker extension icon in your Chrome toolbar.
 
-3. If the video quality is not set to screen resolution, the extension will notify you and provide options to optimize the quality.
+3. After installation, browse YouTube as usual. When you click on a video, the extension will send you a notification to check your video quality.
 
 4. Enjoy your high-quality streaming experience!
 
