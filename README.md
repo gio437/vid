@@ -10,6 +10,10 @@
 
 ## Installation
 
+Installation: Install the extension from the Chrome Web Store - https://chrome.google.com/webstore/detail/lanpnabaldbelncmcdmknlkkggdokklg/preview?hl=en&authuser=0
+
+OR
+
 1. Clone this repository or download the ZIP file.
 
     ```shell
