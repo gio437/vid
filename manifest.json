@@ -1,18 +1,16 @@
 {
     "name": "video quality checker",
-    "version": "1.0.0",
-    "description": "Check if video quality is the same as screen resolution",
+    "version": "1.0.1",
+    "description": "Sets video quality automatically to the highest res avaliable",
     "manifest_version": 3,
     "author": "Giovanni S",
-    "background": {
-      "service_worker": "javascript.js"
-    },
     "permissions": [
         "notifications",
-        "tabs"
+        "tabs",
+        "webNavigation"
     ],
     "content_scripts": [ {
-        "matches": ["https://www.youtube.com/watch*"],
+        "matches": ["https://www.youtube.com/*"],
         "js": ["popup.js"]
     }]
 }
