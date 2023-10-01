@@ -9,10 +9,7 @@
     },
     "permissions": [
         "notifications",
-        "storage",
-        "alarms",
-        "tabs",
-        "webNavigation"
+        "tabs"
     ],
     "content_scripts": [ {
         "matches": ["https://www.youtube.com/watch*"],
