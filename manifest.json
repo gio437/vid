@@ -4,10 +4,6 @@
     "description": "Sets video quality automatically to the highest res avaliable",
     "manifest_version": 3,
     "author": "Giovanni S",
-    "permissions": [
-        "notifications",
-        "tabs"
-    ],
     "content_scripts": [ {
         "matches": ["https://www.youtube.com/*"],
         "js": ["popup.js"]
