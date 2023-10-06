@@ -10,7 +10,7 @@
 
 ## Installation
 
-Installation: Install the extension from the Chrome Web Store - https://chrome.google.com/webstore/detail/lanpnabaldbelncmcdmknlkkggdokklg/preview?hl=en&authuser=0
+Installation: Install the extension from the Chrome Web Store - https://chrome.google.com/webstore/detail/video-quality-checker/lanpnabaldbelncmcdmknlkkggdokklg
 
 OR
 
