@@ -8,6 +8,8 @@
 
 - User-Centric Design: The extension prioritizes a seamless user experience, ensuring you always enjoy YouTube videos at their best quality, tailored to your screen.
 
+- Watch the video on how this extenstion works: https://www.youtube.com/watch?v=RM34SO5VRBE
+
 ## Installation
 
 Installation: Install the extension from the Chrome Web Store - https://chrome.google.com/webstore/detail/video-quality-checker/lanpnabaldbelncmcdmknlkkggdokklg
